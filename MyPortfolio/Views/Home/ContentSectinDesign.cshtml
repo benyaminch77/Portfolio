@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MyPortfolio.Models.Portfolio>
+
+<!--=============== CONTACT SECTIN DESIGN ===============-->
+<section class="contact" id="contact">
+
+    <h2 class="heading">با من <span>تماس بگیر!</span></h2>
+
+    @*<table>
+            <tr class="">
+                <td class="firstTd">ایمیل : </td>
+                <td class="secondTd"><span> @Model.Email</span></td>
+            </tr>
+            <tr>
+                <td class="firstTd">شماره تماس : </td>
+                <td class="secondTd"><span> @Model.Phone </span></td>
+            </tr>
+            <tr>
+                <td class="firstTd">پیج اینستاگرام : </td>
+                <td class="secondTd">
+                    <span>
+                        <a href="https://www.instagram.com/benyamin_chupani">@Model.Instagram</a>
+                    </span>
+                </td>
+            </tr>
+        </table>*@
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="اسم کامل" />
+            <input type="email" placeholder="آدرس ایمیل" />
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="شماره تماس" />
+            <input type="text" placeholder="موضوع ایمیل" />
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="پیام شما"></textarea>
+        <input type="submit" value="ارسال پیام" class="btn" />
+    </form>
+</section>

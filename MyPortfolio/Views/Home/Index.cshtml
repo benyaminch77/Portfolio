@@ -1,5 +1,6 @@
 ﻿@*@model Contact*@
 @model List<Portfolio>
+
 @{
     ViewData["Title"] = "صفحه اصلی سایت";
 }
@@ -12,190 +13,36 @@
 }
 
 <!--=============== HEADER DESIGN ===============-->
-<header class="header">
-    <a href="#" class="logo">نمونه کار ها</a>
-
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-        <a href="#home" class="active">خانه</a>
-        <a href="#about">درباره من</a>
-        <a href="#services">خدمات</a>
-        <a href="#portfolio">نمونه کار ها</a>
-        <a href="#contact">تماس با من</a>
-    </nav>
-</header>
+@await Html.PartialAsync("HeaderDesign", new List<Portfolio>())
 
 <!--=============== HOME SECTIN DESIGN ===============-->
-<section class="home" id="home">
-    <div class="home-content">
-        <h3>سلام خوش آمدید، من</h3>
-        <h1>بنیامین چوپانی</h1>
-        <h3>هستم و <span class="multiple-text"> </span> انجام میدم.</h3>
-        <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است،
-            <br />
-            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
-            برای شرایط فعلی تکنولوژی
-        </p>
-
-        <div class="social-media">
-            <a href="https://www.instagram.com/benyamin_chupani/"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-whatsapp"></i></a>
-            <a href="https://web.telegram.org/a/"><i class="bx bxl-telegram"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
-            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
-        </div>
-        <a href="#" class="btn">دانلود رزومه</a>
-    </div>
-    <div class="home-image">
-        <img src="~/images/Home-img.png" />
-    </div>
-</section>
+@await Html.PartialAsync("HomeSectionDesign", new List<Portfolio>())
 
 <!--=============== ABOUT SECTIN DESIGN ===============-->
-<section class="about" id="about">
-    <div class="about-img">
-        <img src="~/images/about-img.png" />
-    </div>
-
-    <div class="about-content">
-        <h2 class="heading">درباره <span>من</span></h2>
-        <h3>برنامه نویس!</h3>
-
-        <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است،
-            <br />
-            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
-            برای شرایط فعلی تکنولوژی
-            <br />
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است،
-            <br />
-            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
-            برای شرایط فعلی تکنولوژی
-        </p>
-
-        <a asp-controller="Home" asp-action="AboutMe" class="btn">بیشتر بخوانید</a>
-    </div>
-</section>
+@await Html.PartialAsync("AboutSectionDesign", new List<Portfolio>())
 
 <!--=============== SERVICES SECTIN DESIGN ===============-->
-<secton class="services" id="services">
-    <h2 class="heading"><span>خدمات </span>من</h2>
-    <div class="services-container">
-        <div class="services-box">
-            <i class="bx bx-code-alt"></i>
-            <h3>توسعه دهنده وب</h3>
-
-            <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-                <br />
-                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
-                و برای شرایط فعلی تکنولوژی
-                <br />
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-            </p>
-
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-
-        <div class="services-box">
-            <i class="bx bxs-paint"></i>
-            <h3>طراح گرافیک</h3>
-
-            <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-                <br />
-                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
-                و برای شرایط فعلی تکنولوژی
-                <br />
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-            </p>
-
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-
-        <div class="services-box">
-            <i class="bx bx-bar-chart-alt"></i>
-            <h3>دیجیتال مارکتینگ</h3>
-
-            <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-                <br />
-                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
-                و برای شرایط فعلی تکنولوژی
-                <br />
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است،
-            </p>
-
-            <a href="#" class="btn">بیشتر بخوانید</a>
-        </div>
-    </div>
-</secton>
+@await Html.PartialAsync("ServicesSectonDesign", new List<Portfolio>())
 
 <!--=============== PORTFOLIO SECTIN DESIGN ===============-->
+@*@await Html.PartialAsync("PortfolioSectionDesign", new List<Portfolio>())*@
 <section class="portfolio" id="portfolio">
     <h2 class="heading">آخرین <span>پروژه</span></h2>
 
     <div class="portfolio-container">
         @foreach (var Portfolio in Model)
         {
-        <div class="portfolio-box">
-            <img src="~/images/@Portfolio.Image" alt="@Portfolio.Title" title="@Portfolio.Title" />
-            <div class="portfolio-layer">
-                <h4>@Portfolio.Title</h4>
-                <p>@Portfolio.Description</p>
-                <a href="#" alt="@Portfolio.Title" title="@Portfolio.Title"><i class="bx bx-link-external"></i></a>
+            <div class="portfolio-box">
+                <img src="~/images/@Portfolio.Image" alt="@Portfolio.Title" title="@Portfolio.Title" />
+                <div class="portfolio-layer">
+                    <h4>@Portfolio.Title</h4>
+                    <p>@Portfolio.Description</p>
+                    <a href="#" alt="@Portfolio.Title" title="@Portfolio.Title"><i class="bx bx-link-external"></i></a>
+                </div>
             </div>
-        </div>
         }
-        
+    </div>
 </section>
 
 <!--=============== CONTACT SECTIN DESIGN ===============-->
-<section class="contact" id="contact">
-
-    <h2 class="heading">با من <span>تماس بگیر!</span></h2>
-
-    @*<table>
-        <tr class="">
-            <td class="firstTd">ایمیل : </td>
-            <td class="secondTd"><span> @Model.Email</span></td>
-        </tr>
-        <tr>
-            <td class="firstTd">شماره تماس : </td>
-            <td class="secondTd"><span> @Model.Phone </span></td>
-        </tr>
-        <tr>
-            <td class="firstTd">پیج اینستاگرام : </td>
-            <td class="secondTd">
-                <span>
-                    <a href="https://www.instagram.com/benyamin_chupani">@Model.Instagram</a>
-                </span>
-            </td>
-        </tr>
-    </table>*@
-
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="اسم کامل" />
-            <input type="email" placeholder="آدرس ایمیل" />
-        </div>
-
-        <div class="input-box">
-            <input type="number" placeholder="شماره تماس" />
-            <input type="text" placeholder="موضوع ایمیل" />
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="پیام شما"></textarea>
-        <input type="submit" value="ارسال پیام" class="btn" />
-    </form>
-</section>
+@await Html.PartialAsync("ContentSectinDesign", new List<Portfolio>())
