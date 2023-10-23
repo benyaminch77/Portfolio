@@ -1,0 +1,20 @@
+﻿@model List<Service>
+
+<!--=============== SERVICES SECTIN DESIGN ===============-->
+<secton class="services" id="services">
+    <h2 class="heading"><span>خدمات </span>من</h2>
+    <div class="services-container">
+    @foreach (var Service in Model)
+    {
+        <div class="services-box">
+            <i class="@Service.Icon"></i>
+            <h3>@Service.Title</h3>
+
+            <p>@Service.Discription</p>
+
+            <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+    }
+
+    </div>
+</secton>

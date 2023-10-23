@@ -10,6 +10,15 @@ namespace MyPortfolio.Models
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Instagram { get; set; }
+
+        public Contact(string email, string phone, string instagram)
+        {
+            Email = email;
+            Phone = phone;
+            Instagram = instagram;
+        }
+        
     }
+
 
 }

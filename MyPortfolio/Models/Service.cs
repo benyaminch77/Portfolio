@@ -5,19 +5,19 @@ using System.Threading.Tasks;
 
 namespace MyPortfolio.Models
 {
-    public class Portfolio
+    public class Service
     {
         public long Id { get; set; }
         public string Title { get; set; }
         public string Discription { get; set; }
-        public string Image { get; set; }
+        public string Icon { get; set; }
 
-        public Portfolio(long id, string title, string discription, string image)
+        public Service(long id, string title, string discription, string icon)
         {
             Id = id;
             Title = title;
             Discription = discription;
-            Image = image;
+            Icon = icon;
         }
     }
 }

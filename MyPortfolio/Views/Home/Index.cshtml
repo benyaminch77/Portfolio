@@ -1,5 +1,4 @@
-﻿@*@model Contact*@
-@model List<Portfolio>
+﻿@model List<Portfolio>
 
 @{
     ViewData["Title"] = "صفحه اصلی سایت";
@@ -15,34 +14,22 @@
 <!--=============== HEADER DESIGN ===============-->
 @await Html.PartialAsync("HeaderDesign", new List<Portfolio>())
 
-<!--=============== HOME SECTIN DESIGN ===============-->
-@await Html.PartialAsync("HomeSectionDesign", new List<Portfolio>())
 
+
+<!--=============== HOME SECTIN DESIGN ===============-->
+@await Html.PartialAsync("Home", new List<Portfolio>())
+
+<!-- Loding View Component -->
 <!--=============== ABOUT SECTIN DESIGN ===============-->
 @await Html.PartialAsync("AboutSectionDesign", new List<Portfolio>())
 
 <!--=============== SERVICES SECTIN DESIGN ===============-->
-@await Html.PartialAsync("ServicesSectonDesign", new List<Portfolio>())
+@await Component.InvokeAsync("Service")
 
 <!--=============== PORTFOLIO SECTIN DESIGN ===============-->
 @*@await Html.PartialAsync("PortfolioSectionDesign", new List<Portfolio>())*@
-<section class="portfolio" id="portfolio">
-    <h2 class="heading">آخرین <span>پروژه</span></h2>
+@await Component.InvokeAsync("Portfolio")
 
-    <div class="portfolio-container">
-        @foreach (var Portfolio in Model)
-        {
-            <div class="portfolio-box">
-                <img src="~/images/@Portfolio.Image" alt="@Portfolio.Title" title="@Portfolio.Title" />
-                <div class="portfolio-layer">
-                    <h4>@Portfolio.Title</h4>
-                    <p>@Portfolio.Description</p>
-                    <a href="#" alt="@Portfolio.Title" title="@Portfolio.Title"><i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-        }
-    </div>
-</section>
 
 <!--=============== CONTACT SECTIN DESIGN ===============-->
-@await Html.PartialAsync("ContentSectinDesign", new List<Portfolio>())
+@await Component.InvokeAsync("Content")
