@@ -15,39 +15,16 @@
 </head>
 <body>
     <!--=============== HEADER DESIGN ===============-->
-    <header class="header">
-        <a href="#" class="logo">نمونه کار ها</a>
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="index/#home" class="active">خانه</a>
-            <a href="index/#about">درباره من</a>
-            <a href="index/#services">خدمات</a>
-            <a href="index/#portfolio">نمونه کار ها</a>
-            <a href="index/#contact">تماس با من</a>
-        </nav>
-    </header>
+    <partial name="Header" />
 
     <!--=============== RenderBody ===============-->
 
     @RenderBody()
 
     <!--=============== FOOTER DESIGN ===============-->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>
-                طراحی و توسعه این سایت توسط بنیامین چوپانی انجام گرفته است.
-                کلیه حقوق مادی و معنوی این سایت متعلق به بنیامین چوپانی می باشد.
-            </p>
-        </div>
+    <partial name="Footer" />
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
-
-    <!--=============== SCROLLREVEAL JS ===============-->
+<!--=============== SCROLLREVEAL JS ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--=============== TYPED JS ===============-->
