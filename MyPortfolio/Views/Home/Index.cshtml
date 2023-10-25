@@ -14,12 +14,9 @@
 <!--=============== HEADER DESIGN ===============-->
 @await Html.PartialAsync("HeaderDesign", new List<Portfolio>())
 
-
-
 <!--=============== HOME SECTIN DESIGN ===============-->
 @await Html.PartialAsync("Home", new List<Portfolio>())
 
-<!-- Loding View Component -->
 <!--=============== ABOUT SECTIN DESIGN ===============-->
 @await Html.PartialAsync("AboutSectionDesign", new List<Portfolio>())
 
@@ -27,9 +24,7 @@
 @await Component.InvokeAsync("Service")
 
 <!--=============== PORTFOLIO SECTIN DESIGN ===============-->
-@*@await Html.PartialAsync("PortfolioSectionDesign", new List<Portfolio>())*@
 @await Component.InvokeAsync("Portfolio")
 
-
 <!--=============== CONTACT SECTIN DESIGN ===============-->
-@await Component.InvokeAsync("Content")
+@await Html.PartialAsync("Content", new MyPortfolio.Models.Contact())

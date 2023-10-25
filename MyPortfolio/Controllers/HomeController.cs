@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using MyPortfolio.Models;
 using System.Collections.Generic;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Http;
 
 namespace MyPortfolio.Controllers
 {
@@ -16,6 +18,20 @@ namespace MyPortfolio.Controllers
         public IActionResult AboutMe()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            var model = new Contact();
+            return View(model);
+        }
+
+        [HttpPost]
+        public JsonResult Contact(Contact form)
+        {
+            Console.WriteLine(form.ToString());
+            return Json(Ok());
         }
 
 

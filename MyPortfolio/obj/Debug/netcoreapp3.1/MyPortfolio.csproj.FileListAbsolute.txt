@@ -357,8 +357,8 @@ W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcorea
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\HeaderDesign.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\ServicesSectonDesign.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
-W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Content\_Content.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Portfolio\_portfolio.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Service\_Service.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Footer.cshtml.g.cs
 W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Header.cshtml.g.cs
+W:\آموزش ASP.Net Core\Practise\1.MyPortfolio\MyPortfolio\obj\Debug\netcoreapp3.1\Razor\Views\Home\Content.cshtml.g.cs
